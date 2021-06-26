@@ -19,7 +19,7 @@
 
 }
 
-h1{
+.tituloInvisible{
   font-size: 0pt;
   opacity: 0px;
 }
@@ -37,15 +37,10 @@ h1{
   margin: 0px;
 }
 
-body{
+.miBody{
   font-family: 'Mulish', sans-serif;
   margin: 70px;
 }
-
-h2{
-  font-weight: 700;
-}
-
 
 /* HEADER */
 
@@ -64,14 +59,14 @@ ul{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 16pt;
   font-weight: 300;
-  color: #404041;
+  color: #404041 !important;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 
@@ -85,8 +80,13 @@ a:hover {
     flex-direction: column;
   }
 
-.nav{
+.navElementos{
   width: 100%;
+}
+
+.index{
+  text-decoration: none;
+  color: var(--marroncito);
 }
 
 .acostaditos{
@@ -130,6 +130,26 @@ a:hover {
   border: 1px solid var(--negro);
   box-sizing: border-box;
   border-radius: 2px;
+}
+
+.carouselTitulo{
+  font-weight: 700;
+}
+
+.carousel-inner{
+  margin: 30px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 80% !important;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tresCarouseles{
+  display: flex;
 }
 
 /* FUNCIONES  */
