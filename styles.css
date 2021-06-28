@@ -137,19 +137,15 @@ a:hover {
 }
 
 .carousel-inner{
-  margin: 30px;
+  margin: 20px;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  width: 80% !important;
+  width: 50% !important;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
   margin-left: auto;
-}
-
-.tresCarouseles{
-  display: flex;
 }
 
 /* FUNCIONES  */
@@ -262,6 +258,12 @@ margin-right: 70px;
   margin-bottom: 20px; 
   border-style: none;
   border-bottom: 1px solid;
+}
+
+form{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 
 /* FOOTER */
