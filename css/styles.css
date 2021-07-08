@@ -14,9 +14,7 @@
     --marroncito: #404041;
     --blanco: #FFFFFF;
     --negro: #000000;
-    --lila: #A650F7;
-    --verde: #79F48F;
-  
+
   }
   
   .tituloInvisible{
@@ -38,8 +36,9 @@
   }
   
   .miBody{
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Whyte', sans-serif;
     margin: 70px;
+    background-color: #FAFAFA;
   }
   
   /* HEADER */

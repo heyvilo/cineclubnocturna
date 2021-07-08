@@ -1,2 +1,10 @@
+div {
+  background-color: #FAFAFA; }
+
 h2 {
+  font-size: 18pt; }
+
+#directores {
+  text-transform: uppercase;
+  letter-spacing: 5px;
   color: #404041; }

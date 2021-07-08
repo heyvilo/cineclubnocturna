@@ -1,8 +1,17 @@
 @import "variables.scss";
 
-h2 {
-
-color: $colorMarroncito;
-
-
+div {
+    
+background-color: $colorCasiBlanco;
 }
+
+h2 {
+    font-size: 18pt;
+}
+
+#directores{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $colorMarroncito;
+}
+
