@@ -99,6 +99,7 @@
   .acostaditos{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 0px;
   
   }
@@ -106,8 +107,9 @@
   .barraNav{
     display:flex;    
     flex-direction: row;
-    width: 100%;
+    width: 100% !important;
     text-align: center;
+    justify-content: space-between;
   
   }
 
