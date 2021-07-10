@@ -56,4 +56,14 @@ h2 {
 
   }
 
-  
+/* FUNCIONES */
+
+@mixin funcionesMalba ($colorFondo, $radio){
+    background-color: $colorFondo;
+    border-radius: $radio;
+  }
+
+.cardFunciones {
+    @include funcionesMalba (#dfdbd3, 1pt);
+}
+
