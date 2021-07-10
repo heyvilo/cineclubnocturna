@@ -24,7 +24,7 @@
   }
   
   .miBody{
-    font-family: 'Whyte', sans-serif;
+    font-family: 'Mulish', sans-serif;
     margin: 70px;
     background-color: #FAFAFA;
   }
@@ -59,7 +59,7 @@
   
   /* INDEX */
   
-  .primerBloque{
+  .primerBloqueHome{
     display: flex;
     margin-top: 50px;
   }
@@ -110,14 +110,13 @@
 
 /* PROBANDO INDEX DE 800PX PARA ABAJO */
   
-  
 @media only screen and (max-width: 800px){
 
   .tituloEspecial{
     font-size: 73pt;
   }
     
-  .bloqueSuperior{
+  .bloqueSuperiorHome{
     display: flex;
     flex-direction: column;
   }
@@ -146,24 +145,24 @@
   
   }
 
-  .primerBloque{
-  display: flex;
-  flex-direction: column;
-  }
-
-  .primerBloque p {
-  font-size: 12pt;
-  width: 100%;
-  justify-content: auto;
-  } 
-    
-  iframe{
-  width: 650px
-  }
-
-  #directores{
-    font-size: 10pt;
-  }
+  .primerBloqueHome{
+    display: flex;
+    flex-direction: column;
+    }
+  
+    .primerBloqueHome p {
+    font-size: 12pt;
+    width: 100%;
+    justify-content: auto;
+    } 
+      
+    iframe{
+    width: 650px
+    }
+  
+    #directores{
+      font-size: 10pt;
+    }
 
   
   /* FUNCIONES  */
@@ -207,6 +206,7 @@
   text-align:justify;
   margin-right: 70px;
   }
+
   .pFINAL{
     font-weight: bold;
     font-style: italic;
@@ -278,19 +278,20 @@
   }
   
   /* FOOTER */
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-  }
-  
-  .bloque{
-    width: 100%;
-    height: 30vh;
-    padding: 20px;
-  }
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--marroncito);
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.bloque{
+  width: 100%;
+  height: 20vh;
+  padding: 20px;
+}
 
 }
