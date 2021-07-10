@@ -1,0 +1,32 @@
+
+.bloqueSuperior{
+
+    display: flex;
+        
+    .tituloEspecial{
+        font-family:'outlines', sans-serif;  
+        font-size: 60pt;
+        margin: 0px;
+    }
+        
+    .barraNav{
+        margin-top: 20px;
+        text-align: right;
+        width: 60%;
+    }
+        
+    ul{
+        list-style-type: none;
+    }
+        
+    a{
+        text-decoration: none !important;
+        font-size: 16pt;
+        font-weight: 300;
+        color: #404041 !important;
+    }
+
+    a:hover{
+        text-decoration: underline !important;
+    }
+}

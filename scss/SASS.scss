@@ -1,4 +1,6 @@
-@import "variables.scss";
+@import "colores.scss";
+@import "header.scss";
+@import "footer.scss";
 
 
 div {
@@ -13,4 +15,6 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 5px;
     color: $colorMarroncito;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
