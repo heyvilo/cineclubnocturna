@@ -1,3 +1,7 @@
+/* Linkee esta segunda hoja con los estilos compilados por precaución 
+a las veces anteriores que se borró el contenido del stylesheet. */
+
+
 .bloqueSuperior {
   display: flex; }
   .bloqueSuperior .tituloEspecial {
@@ -33,6 +37,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px; }
 
+/* HOME */
 div {
   background-color: #FFFFFF; }
 
@@ -45,3 +50,17 @@ h2 {
   color: #404041;
   margin-top: 20px;
   margin-bottom: 50px; }
+
+/* ANALISIS */
+.analisisPelis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .analisisPelis .primerPeli, .analisisPelis .segundaPeli, .analisisPelis .tercerPeli, .analisisPelis .cuartaPeli, .analisisPelis .quintaPeli {
+    width: 20%;
+    margin: 20px;
+    padding: 20px; }
+    .analisisPelis .primerPeli p, .analisisPelis .segundaPeli p, .analisisPelis .tercerPeli p, .analisisPelis .cuartaPeli p, .analisisPelis .quintaPeli p {
+      font-size: 10pt;
+      font-style: italic; }

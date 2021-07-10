@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "footer.scss";
 
+/* HOME */
 
 div {
 background-color: $colorBlanco;
@@ -18,3 +19,41 @@ h2 {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+/* ANALISIS */
+
+.analisisPelis{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .primerPeli{
+        width: 20%;
+        margin: 20px;
+        padding: 20px;
+        
+        p{
+        font-size: 10pt;
+        font-style: italic;    
+        }
+    }
+        .segundaPeli{
+        @extend .primerPeli;
+        }   
+
+        .tercerPeli{
+        @extend .primerPeli;
+        }   
+
+        .cuartaPeli{
+        @extend .primerPeli;
+        }   
+
+        .quintaPeli{
+        @extend .primerPeli;
+        }   
+
+  }
+
+  
