@@ -1,0 +1,21 @@
+@import "colores.scss";
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: $colorMarroncito;
+    background-color:$colorBlanco;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+
+    .bloque{
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+}
+  

@@ -1,0 +1,20 @@
+@import "colores.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+div {
+background-color: $colorBlanco;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+#directores{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $colorMarroncito;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
