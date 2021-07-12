@@ -56,24 +56,26 @@
     font-weight: 700;
   }
   
-  .carousel-inner{
-    margin: 20px;
-  }
-  
   .carousel-inner {
   
     position: relative;
-    width: 40% !important;
     overflow: hidden;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
   }
   
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
+  .carousel-item{
+  transition: transform .10s ease-in-out;
   }
 
+  .tresCarouseles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
 /* PROBANDO INDEX DE 800PX PARA ABAJO */
   
 @media only screen and (max-width: 800px){
@@ -250,3 +252,11 @@
   } 
 
 
+.botonAnalisis{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #444;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    color: black;
+  }
