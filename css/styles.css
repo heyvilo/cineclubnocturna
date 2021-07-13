@@ -76,64 +76,18 @@
     width: 100%;
 
   }
-/* PROBANDO INDEX DE 800PX PARA ABAJO */
-  
-@media only screen and (max-width: 800px){
 
-  .tituloEspecial{
-    font-size: 73pt;
-  }
-    
-  .bloqueSuperior{
+  .novedades{
     display: flex;
-    flex-direction: column;
-  }
-  
-  .navElementos{
     width: 100%;
-  }
-  
-  .index{
-    text-decoration: none;
-    color: var(--marroncito);
-  }
-  
-  .acostaditos{
-    display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0px;
-  
-  }
-  
-  .barraNav{
-    display:flex;    
-    flex-direction: row;
-    width: 100% !important;
-    text-align: center;
-    justify-content: space-between;
-  
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-  .primerBloque{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .primerBloque p {
-    font-size: 12pt;
-    width: 100%;
-    justify-content: auto;
-  } 
-      
-  iframe{
-    width: 650px
-  }
-  
-  #directores{
+  .card-text{
     font-size: 10pt;
   }
-}
   
   /* FUNCIONES  */
   

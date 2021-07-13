@@ -27,15 +27,13 @@
     <div class="bloqueSuperior">
         <div>
             <p class="tituloEspecial">
-                cineclub
-            </p>
-            <p class="tituloEspecial">
-                nocturna
+                cineclub nocturna
             </p>
         </div>
-        <div class="barraNav">
-            <nav class="navElementos">  
-                <ul class="acostaditos"> 
+        <div class="bloqueNavegacion">
+            <nav>  
+                <ul> 
+                    <div class="navBarra">
                     <li>
                         <a href="index.html">home</a>
                     </li>
@@ -55,6 +53,7 @@
                     <li>
                         <a href="contacto.html">contacto</a>
                     </li>
+                    </div>
                 </ul>
             </nav> 
          </div>
@@ -88,18 +87,18 @@
     <div class="tresCarouseles">
 
         <div id="primerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../recursos/img/1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../recursos/img/6.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../recursos/img/7.jpeg" class="d-block w-100" alt="...">
-          </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../recursos/img/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../recursos/img/6.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../recursos/img/7.jpeg" class="d-block w-100" alt="...">
+            </div>
+            </div>
         </div>
-    </div>
 
     <div id="segundoCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -130,11 +129,28 @@
     </div>
 </div>
 
- <!-- Tercer bloque del home -->
-   
-<div class="tercerBloqueHome">
+ <!-- Novedades -->
 
-    <h2 class="subtitle">Buscar por director</h2>
+ <h3 class="news">Novedades</h3>
+
+ <div class="novedades"> 
+
+       
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../recursos/seminario.png" alt="news1">
+        <div class="card-body">
+          <p class="card-text">El Seminario de Cineclubismos Latinoamericanos es un encuentro de investigadores y militantes cineclubistas que se realizará periódicamente para la presentación y debate de investigaciones sobre el cineclubismo.</p>
+        </div>
+      </div>
+ </div>
+
+
+
+ <!-- Directores -->
+   
+<div class="directoresHome">
+
+    <h3 class="subtitle">Buscar por director</h3>
     <p id="directores">
           <!-- En el futuro ésta lista de directores debe alimentarse de un .json -->
         Steven Spielberg • Martin Scorsese • Ridley Scott • Christopher Nolan • Tim Burton • Hayao Miyazaki • Quentin Tarantino • James Cameron • John Woo • Peter Jackson • Clint Eastwood • David Fincher • Francis Ford Coppola • Brian De Palma • Robert Zemeckis • Lilly Wachowski • Guillermo del Toro • Lana Wachowski • Guy Ritchie • Oliver Stone • Robert Rodriguez •
