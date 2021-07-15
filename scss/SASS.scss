@@ -1,56 +1,101 @@
+/* GLOBAL */
+
 @import "colores.scss";
 @import "header.scss";
 @import "footer.scss";
 
+.tituloInvisible{
+  font-size: 0pt;
+  opacity: 0px;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+  margin: 100px !important;
+}
+
+@font-face{
+  font-family: 'outlines';
+  src: url('Outlines.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* HOME */
 
 h2 {
-    font-size: 18pt;
+  font-size: 18pt;
 }
 
 #directores{
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: $colorMarroncito;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $colorMarroncito;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 /* ANALISIS */
 
 .analisisPelis{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
 
-    .primerPeli{
-        width: 20%;
-        margin: 20px;
-        padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .primerPeli{
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
         
-        p{
-        font-size: 10pt;
-        font-style: italic;    
-        }
+    p{
+    font-size: 10pt;
+    font-style: italic;    
     }
-        .segundaPeli{
-        @extend .primerPeli;
-        }   
-
-        .tercerPeli{
-        @extend .primerPeli;
-        }   
-
-        .cuartaPeli{
-        @extend .primerPeli;
-        }   
-
-        .quintaPeli{
-        @extend .primerPeli;
-        }   
 
   }
+
+  .segundaPeli{
+    @extend .primerPeli;
+  }   
+
+  .tercerPeli{
+    @extend .primerPeli;
+  }   
+
+  .cuartaPeli{
+    @extend .primerPeli;
+  }   
+
+  .quintaPeli{
+    @extend .primerPeli;
+  }   
+
+  .subAnalisis{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    }
+}
+
+  .botonAnalisis{
+    padding: 10px 20px 10px 20px;
+    border: 1pt solid black;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    color: black;
+
+  .botonAnalisis:hover{
+    background-color: $amarillito;
+    border: 1pt solid $amarillito;
+    }
+
+}
+
+  
+
 
 /* FUNCIONES */
 
@@ -58,8 +103,188 @@ h2 {
     background-color: $colorFondo;
     border-radius: $radio;
   }
-
 .cardFunciones {
-    @include funcionesMalba (#dfdbd3, 1pt);
+  @include funcionesMalba (#dfdbd3, 1pt);
 }
 
+/* CONTACTO */
+  
+body{
+
+  .formularioContacto{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    }
+      
+  .inputForm{
+    margin-bottom: 20px; 
+    border-style: none;
+    border-bottom: 1px solid;
+    }
+      
+  form{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+    }
+    
+  .lunaContacto{
+    position: absolute; 
+    right: 40px; 
+    top: 350px; 
+    opacity: 0.5;
+    } 
+    
+  }
+  
+  
+
+  /* INDEX */
+  
+  .primerBloque{
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .textoIzquierda{
+    width: 70%;
+    font-weight: 300;
+    font-size: 14pt;
+    margin-left: 10px;
+  }
+  
+  .segundoBloque{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+  }
+  
+  .suscribirse{
+    background: var(--blanco);
+    width: 100px;
+    height: 25px;
+    border: 1px solid var(--negro);
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+  
+  .carouselTitulo{
+    font-weight: 700;
+  }
+  
+  .carousel-inner {
+  
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
+  }
+  
+  .carousel-item{
+  transition: transform .10s ease-in-out;
+  }
+
+  .tresCarouseles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+  .novedades{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card-text{
+    font-size: 10pt;
+  }
+  
+  /* FUNCIONES  */
+  
+  .funciones{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  table {
+    margin: 25px 0 25px 0;
+  }
+  
+  .date {
+    font-family: 'ubuntu', sans-serif;
+    color: black;
+    font-size: 60px;
+    font-weight: 800; 
+    opacity: 0.7;
+    margin: 15px 0 45px 0;  
+    text-align: left;
+  }
+  
+  /* HISTORIA */
+  
+  
+  .bloquePrincipal{
+    display: flex;
+    margin: 20px;
+  }
+  
+  .textoNosotros{
+  width: 40%;
+  font-size: 12pt;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align:justify;
+  margin-right: 70px;
+  }
+
+  .pFINAL{
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .grillaFotos {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px 350px 450px 450px;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "foto1 foto2"
+      "foto3 foto4"
+      "foto5 foto6"
+      "programa1 programa2"
+      "programa3 programa4";
+    width: 50%;
+    margin-top: 22px;
+  }
+  
+  .foto1 { grid-area: foto1; }
+  
+  .foto2 { grid-area: foto2; }
+  
+  .foto3 { grid-area: foto3; }
+  
+  .foto4 { grid-area: foto4; }
+  
+  .foto5 { grid-area: foto5; }
+  
+  .foto6 { grid-area: foto6; }
+  
+  .programa1 { grid-area: programa1; }
+  
+  .programa2 { grid-area: programa2; }
+  
+  .programa3 { grid-area: programa3; }
+  
+  .programa4 { grid-area: programa4; }
+  
+  
