@@ -94,8 +94,6 @@ h2 {
 
 }
 
-  
-
 
 /* FUNCIONES */
 
@@ -173,19 +171,6 @@ body{
     font-weight: 700;
   }
   
-  .carousel-inner {
-  
-    position: relative;
-    overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 30px;
-    width: 30%;
-  }
-  
-  .carousel-item{
-  transition: transform .10s ease-in-out;
-  }
 
   .tresCarouseles{
     display: flex;
@@ -194,17 +179,35 @@ body{
 
   }
 
+
+  .carousel-inner {
+  
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
+    height: 480px;
+
+    .carousel-item{
+      transition: transform .15s;
+    }
+  }
+
   .novedades{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    .card-text{
+      font-size: 10pt;
+    }
+
   }
 
-  .card-text{
-    font-size: 10pt;
-  }
   
   /* FUNCIONES  */
   
@@ -212,20 +215,21 @@ body{
     display: flex;
     justify-content: space-between;
 
-  }
-  
-  table {
-    margin: 25px 0 25px 0;
-  }
-  
-  .date {
-    font-family: 'ubuntu', sans-serif;
-    color: black;
-    font-size: 60px;
-    font-weight: 800; 
-    opacity: 0.7;
-    margin: 15px 0 45px 0;  
-    text-align: left;
+
+    table {
+      margin: 25px 0 25px 0;
+    }
+    
+    .date {
+      font-family: 'ubuntu', sans-serif;
+      color: black;
+      font-size: 60px;
+      font-weight: 800; 
+      opacity: 0.7;
+      margin: 15px 0 45px 0;  
+      text-align: left;
+    }
+
   }
   
   /* HISTORIA */
