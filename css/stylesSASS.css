@@ -44,20 +44,6 @@ footer {
     margin-bottom: 15px;
     line-height: 1.45; }
 
-.tituloInvisible {
-  font-size: 0pt;
-  opacity: 0px; }
-
-body {
-  font-family: 'Mulish', sans-serif;
-  margin: 100px !important; }
-
-@font-face {
-  font-family: 'outlines';
-  src: url("Outlines.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 /* HOME */
 h2 {
   font-size: 18pt; }
@@ -69,63 +55,6 @@ h2 {
   margin-top: 20px;
   margin-bottom: 50px; }
 
-/* ANALISIS */
-.analisisPelis {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-  .analisisPelis .primerPeli, .analisisPelis .segundaPeli, .analisisPelis .tercerPeli, .analisisPelis .cuartaPeli, .analisisPelis .quintaPeli {
-    width: 20%;
-    margin: 20px;
-    padding: 20px; }
-    .analisisPelis .primerPeli p, .analisisPelis .segundaPeli p, .analisisPelis .tercerPeli p, .analisisPelis .cuartaPeli p, .analisisPelis .quintaPeli p {
-      font-size: 10pt;
-      font-style: italic; }
-  .analisisPelis .subAnalisis {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 700; }
-
-.botonAnalisis {
-  padding: 10px 20px 10px 20px;
-  border: 1pt solid black;
-  text-decoration: none;
-  display: block;
-  width: 200px;
-  color: black; }
-  .botonAnalisis .botonAnalisis:hover {
-    background-color: #ffed00;
-    border: 1pt solid #ffed00; }
-
-/* FUNCIONES */
-.cardFunciones {
-  background-color: #dfdbd3;
-  border-radius: 1pt; }
-
-/* CONTACTO */
-body .formularioContacto {
-  display: flex;
-  margin-bottom: 50px;
-  margin-left: 10px; }
-
-body .inputForm {
-  margin-bottom: 20px;
-  border-style: none;
-  border-bottom: 1px solid; }
-
-body form {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  margin-left: 10px; }
-
-body .lunaContacto {
-  position: absolute;
-  right: 40px;
-  top: 350px;
-  opacity: 0.5; }
-
-/* INDEX */
 .primerBloque {
   display: flex;
   margin-top: 50px; }
@@ -175,22 +104,8 @@ body .lunaContacto {
   margin-top: 50px;
   margin-bottom: 50px; }
   .novedades .card-text {
-    font-size: 10pt; }
-
-/* FUNCIONES  */
-.funciones {
-  display: flex;
-  justify-content: space-between; }
-  .funciones table {
-    margin: 25px 0 25px 0; }
-  .funciones .date {
-    font-family: 'ubuntu', sans-serif;
-    color: black;
-    font-size: 60px;
-    font-weight: 800;
-    opacity: 0.7;
-    margin: 15px 0 45px 0;
-    text-align: left; }
+    font-size: 10pt;
+    margin-top: 15pt; }
 
 /* HISTORIA */
 .bloquePrincipal {
@@ -249,3 +164,87 @@ body .lunaContacto {
 
 .programa4 {
   grid-area: programa4; }
+
+/* ANALISIS */
+.analisisPelis {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .analisisPelis .primerPeli, .analisisPelis .segundaPeli, .analisisPelis .tercerPeli, .analisisPelis .cuartaPeli, .analisisPelis .quintaPeli {
+    width: 20%;
+    margin: 20px;
+    padding: 20px; }
+    .analisisPelis .primerPeli p, .analisisPelis .segundaPeli p, .analisisPelis .tercerPeli p, .analisisPelis .cuartaPeli p, .analisisPelis .quintaPeli p {
+      font-size: 10pt;
+      font-style: italic; }
+  .analisisPelis .subAnalisis {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700; }
+
+.botonAnalisis {
+  padding: 10px 20px 10px 20px;
+  border: 1pt solid black;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  color: black; }
+  .botonAnalisis .botonAnalisis:hover {
+    background-color: #ffed00;
+    border: 1pt solid #ffed00; }
+
+/* CONTACTO */
+body .formularioContacto {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 10px; }
+
+body .inputForm {
+  margin-bottom: 20px;
+  border-style: none;
+  border-bottom: 1px solid; }
+
+body form {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 10px; }
+
+body .lunaContacto {
+  position: absolute;
+  right: 40px;
+  top: 350px;
+  opacity: 0.5; }
+
+/* FUNCIONES */
+.cardFunciones {
+  background-color: #dfdbd3;
+  border-radius: 1pt; }
+
+.funciones {
+  display: flex;
+  justify-content: space-between; }
+  .funciones table {
+    margin: 25px 0 25px 0; }
+  .funciones .date {
+    font-family: 'ubuntu', sans-serif;
+    color: black;
+    font-size: 60px;
+    font-weight: 800;
+    opacity: 0.7;
+    margin: 15px 0 45px 0;
+    text-align: left; }
+
+.tituloInvisible {
+  font-size: 0pt;
+  opacity: 0px; }
+
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 100px !important; }
+
+@font-face {
+  font-family: 'outlines';
+  src: url("Outlines.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
