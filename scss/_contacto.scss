@@ -1,0 +1,30 @@
+/* CONTACTO */
+  
+body{
+
+    .formularioContacto{
+      display: flex;
+      margin-bottom: 50px;
+      margin-left: 10px;
+      }
+        
+    .inputForm{
+      margin-bottom: 20px; 
+      border-style: none;
+      border-bottom: 1px solid;
+      }
+        
+    form{
+      margin-bottom: 50px;
+      margin-top: 50px;
+      margin-left: 10px;
+      }
+      
+    .lunaContacto{
+      position: absolute; 
+      right: 40px; 
+      top: 350px; 
+      opacity: 0.5;
+      } 
+      
+    }

@@ -1,0 +1,30 @@
+/* FUNCIONES */
+
+@mixin funcionesMalba ($colorFondo, $radio){
+    background-color: $colorFondo;
+    border-radius: $radio;
+  }
+.cardFunciones {
+  @include funcionesMalba (#dfdbd3, 1pt);
+}
+  
+.funciones{
+    display: flex;
+    justify-content: space-between;
+
+
+    table {
+      margin: 25px 0 25px 0;
+    }
+    
+    .date {
+      font-family: 'ubuntu', sans-serif;
+      color: black;
+      font-size: 60px;
+      font-weight: 800; 
+      opacity: 0.7;
+      margin: 15px 0 45px 0;  
+      text-align: left;
+    }
+
+  }

@@ -1,0 +1,82 @@
+/* HOME */
+
+h2 {
+    font-size: 18pt;
+  }
+  
+  #directores{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $colorMarroncito;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .primerBloque{
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .textoIzquierda{
+    width: 70%;
+    font-weight: 300;
+    font-size: 14pt;
+    margin-left: 10px;
+  }
+  
+  .segundoBloque{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+  }
+  
+  .suscribirse{
+    background: var(--blanco);
+    width: 100px;
+    height: 25px;
+    border: 1px solid var(--negro);
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+  
+  .carouselTitulo{
+    font-weight: 700;
+  }
+  
+
+  .tresCarouseles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+
+  .carousel-inner {
+  
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
+    height: 480px;
+
+    .carousel-item{
+      transition: transform .15s;
+    }
+  }
+
+  .novedades{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .card-text{
+      font-size: 10pt;
+      margin-top: 15pt;
+    }
+
+  }

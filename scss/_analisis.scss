@@ -1,0 +1,59 @@
+
+/* ANALISIS */
+
+.analisisPelis{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+    .primerPeli{
+      width: 20%;
+      margin: 20px;
+      padding: 20px;
+          
+      p{
+      font-size: 10pt;
+      font-style: italic;    
+      }
+  
+    }
+  
+    .segundaPeli{
+      @extend .primerPeli;
+    }   
+  
+    .tercerPeli{
+      @extend .primerPeli;
+    }   
+  
+    .cuartaPeli{
+      @extend .primerPeli;
+    }   
+  
+    .quintaPeli{
+      @extend .primerPeli;
+    }   
+  
+    .subAnalisis{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      }
+  }
+  
+    .botonAnalisis{
+      padding: 10px 20px 10px 20px;
+      border: 1pt solid black;
+      text-decoration: none;
+      display: block;
+      width: 200px;
+      color: black;
+  
+    .botonAnalisis:hover{
+      background-color: $amarillito;
+      border: 1pt solid $amarillito;
+      }
+  
+  }
