@@ -14,6 +14,47 @@
   opacity: 0px;
 }
 
+/* PAGINA DE ERROR */
+
+
+.bodyError{
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 0px !important;
+
+  .bloqueError{
+    display: flex;
+  
+    .tituloError{
+      font-family:'outlines', sans-serif;  
+      font-size: 100pt;
+      margin-top: 100px;
+    }
+    
+    .textoError{
+      font-size: 14pt;
+      font-weight: 300;
+      margin-left: 20px;
+      margin-top: -100px;
+
+      a {
+        font-weight: bold;
+        color: $colorMarroncito;
+      }
+  
+    }
+  
+    .bloqueFotoError{
+      position: relative;
+      margin-top: -100px;
+      margin-left: 200px;
+    }
+  
+  }
+
+}
+
+
+
 body{
   font-family: 'Mulish', sans-serif;
   margin: 100px !important;
@@ -25,5 +66,4 @@ body{
   font-weight: normal;
   font-style: normal;
 }
-
   
