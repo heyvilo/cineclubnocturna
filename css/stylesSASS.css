@@ -27,8 +27,8 @@
       padding-right: 10px; }
     .bloqueSuperior .bloqueNavegacion a:hover {
       text-decoration: underline !important;
-      text-decoration-color: #ffed00 !important;
-      text-decoration-thickness: 10pt !important; }
+      text-decoration-thickness: 10pt !important;
+      text-decoration-color: #ffed00 !important; }
 
 footer {
   display: flex;
@@ -49,11 +49,11 @@ h2 {
   font-size: 18pt; }
 
 #directores {
-  text-transform: uppercase;
   letter-spacing: 5px;
-  color: #404041;
   margin-top: 20px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  text-decoration: none !important;
+  color: #404041 !important; }
 
 .primerBloque {
   display: flex;
@@ -238,6 +238,29 @@ body .lunaContacto {
 .tituloInvisible {
   font-size: 0pt;
   opacity: 0px; }
+
+/* PAGINA DE ERROR */
+.bodyError {
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 0px !important; }
+  .bodyError .bloqueError {
+    display: flex; }
+    .bodyError .bloqueError .tituloError {
+      font-family: 'outlines', sans-serif;
+      font-size: 100pt;
+      margin-top: 100px; }
+    .bodyError .bloqueError .textoError {
+      font-size: 14pt;
+      font-weight: 300;
+      margin-left: 20px;
+      margin-top: -100px; }
+      .bodyError .bloqueError .textoError a {
+        font-weight: bold;
+        color: #404041; }
+    .bodyError .bloqueError .bloqueFotoError {
+      position: relative;
+      margin-top: -100px;
+      margin-left: 200px; }
 
 body {
   font-family: 'Mulish', sans-serif;

@@ -5,11 +5,11 @@ h2 {
   }
   
   #directores{
-    text-transform: uppercase;
     letter-spacing: 5px;
-    color: $colorMarroncito;
     margin-top: 20px;
     margin-bottom: 50px;
+    text-decoration: none !important;
+    color: $colorMarroncito !important;
   }
   
   .primerBloque{
