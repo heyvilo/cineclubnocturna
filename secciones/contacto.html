@@ -14,42 +14,39 @@
         <title>Contactanos</title>
     </head>
 
-    <body>
+    <body class="bodyContacto">
 
         <h1 class="tituloInvisible">Cine Club Nocturna</h1>   
-
-        <!-- Navbar -->
 
     <!-- Navbar -->
 
     <div class="bloqueSuperior">
         <div>
-            <p class="tituloEspecial">
+            <p class="tituloEspecialBlanco">
                 cineclub nocturna
             </p>
         </div>
-        <div class="bloqueNavegacion">
+        <div class="bloqueNavegacionBlanco">
             <nav>  
                 <ul> 
-                    <div class="navBarra">
+                    <div class="navBarraBlanca">
                     <li>
-                        <a href="index.html">home</a>
+                        <a href ="index.html">home</a>
                     </li>
-
                     <li>
-                        <a href="analisis.html">análisis</a>
+                        <a href ="curiosidades.html">curiosidades</a>
                     </li>
-
                     <li>
-                        <a href="funciones.html">funciones</a>
+                        <a href ="error.html">análisis</a>
                     </li>
-
                     <li>
-                        <a href="historia.html">historia</a>
+                        <a href ="funciones.html">funciones</a>
                     </li>
-
                     <li>
-                        <a href="contacto.html">contacto</a>
+                        <a href ="historia.html">historia</a>
+                    </li>
+                    <li>
+                        <a href ="contacto.html">contacto</a>
                     </li>
                     </div>
                 </ul>
@@ -61,77 +58,28 @@
     
         <div class="formularioContacto">
             <form>
-                <label for="nombre">Nombre completo</label>
-                    <br>
-                <input class="inputForm" type="text" name="nombre" size="50">
-                    <br>
-                <label for="email">Email</label>
-                    <br>
-                <input class="inputForm" type="email" name="email" size="50">  
-                    <br>
-                <label for="tel">Teléfono</label>
-                    <br>
-                <input class="inputForm" type="tel" name="tel" size="50">
-                    <br>
-                <label for="motivo">Motivo de contacto:</label>
-                <select class="inputForm" name="motivo">
-                    <option name= "P">Prensa</option>
-                    <option name= "E">Estudiante</option>
-                    <option name= "C">Colaborador</option>
-                </select>
-                    <br>
-                    <br>
-                <div id="terminos"> ¿Querés enterarte de nuestras novedades?
-                    <input type="checkbox" name="acepta" value="1">
+                <div id="formUno">
+                    <label for="nombre">Nombre completo</label>
+                        <br>
+                    <input class="inputForm" type="text" name="nombre" size="50">
+                        <br>
+                    <label for="email">Email</label>
+                        <br>
+                    <input class="inputForm" type="email" name="email" size="50">  
+                        <br>
+                    <label for="tel">Teléfono</label>
+                        <br>
+                    <input class="inputForm" type="tel" name="tel" size="50">
                 </div>
-                    <br>
-                <label for="comentarios">Dejanos tu mensaje</label>
-                    <br>
-                <textarea class="inputForm" name="consulta" rows="5" cols="43"></textarea>
-                    <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar datos">
+                <div id="formDos">
+                    <label for="comentarios">Dejanos tu mensaje</label>
+                        <br>
+                    <textarea class="inputMensaje" name="consulta" rows="10" cols="50"></textarea>
+                        <br>
+                    <input class="botonEnviar" type="submit" value="Enviar">
+                </div>
             </form>
-
-            <div class="lunaContacto">
-                <img src="../recursos/luna.svg" alt="luna" width="400" height="350">
-            </div>
         </div>
-
-        <!-- Footer -->
-
-<footer> 
-    <footer class="footer">
-
-        <div class="bloque">
-            <p>Av. Figueroa Alcorta 3415</p>
-            <p>Tel: +541165652125</p>
-            <p>hola@cinenocturna.com</p>
-        </div>
-        
-        <div class="bloque">
-            <p>Contactanos</p>
-            <p>Próximas funciones</p>
-            <p>Trabajá con nosotros</p>
-        </div>
-    
-        <div class="bloque">
-            
-            <p>Copyright© Cine Club Nocturna. All rights reserved. </p>
-    
-        </div>
-    
-        <div class="bloque social">
-            
-            <p>Estemos en contacto</p>
-            <div class="redes">
-                <p><i class="fab fa-facebook-f"></i></p>
-                <p><i class="fab fa-instagram"></i></p>
-                <p><i class="fab fa-whatsapp"></i></p>
-            </div>
-        </div>
-    </footer>
-</footer>
 
     </body>
 </html>

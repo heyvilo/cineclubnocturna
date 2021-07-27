@@ -1,30 +1,100 @@
-/* CONTACTO */
+/* CONTACTO, TODO CAMBIA A DARK MODE*/
   
-body{
+.bodyContacto{
 
-    .formularioContacto{
+  background-image: url("/Users/vilo/Desktop/cineclubnocturna/recursos/img/fondoStar.png");
+  background-size: cover;
+  height: 900px;
+
+  .tituloEspecialBlanco{
+    font-family:'outlines', sans-serif;  
+    color: white;
+    font-size: 50pt;
+    margin: 0px;
+    width: 40%;
+  }
+
+  .bloqueNavegacionBlanco{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .navBarraBlanca{
       display: flex;
-      margin-bottom: 50px;
-      margin-left: 10px;
-      }
-        
-    .inputForm{
-      margin-bottom: 20px; 
-      border-style: none;
-      border-bottom: 1px solid;
-      }
-        
-    form{
-      margin-bottom: 50px;
-      margin-top: 50px;
-      margin-left: 10px;
-      }
-      
-    .lunaContacto{
-      position: absolute; 
-      right: 40px; 
-      top: 350px; 
-      opacity: 0.5;
-      } 
-      
+      width: 100%;
+      flex-direction: row;
     }
+
+    ul{
+      list-style-type: none;
+    }
+
+    a{
+      text-decoration: none;
+      font-size: 14pt;
+      font-weight: 300;
+      color: white !important;
+      padding-left: 50px;
+      padding-right: 10px;
+    }
+
+    a:hover{
+      text-decoration: underline !important;
+      text-decoration-thickness: 10pt !important;
+      text-decoration-color: $amarillito !important;
+    }
+
+  }
+    
+  .formularioContacto{
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    justify-content: space-between;
+
+    #formDos{
+      margin-left: 180px;
+
+      .botonEnviar {
+      padding: 10px 15px 10px 15px;
+      font-family: 'Mulish', sans-serif;
+      color: white;
+      background-color: black;
+      border: 1px solid white;
+      width: 120px;
+      margin-left: 300px;
+      }
+
+      .botonEnviar:hover {
+        color: black;
+        background-color: $amarillito;
+        border: 1px solid $amarillito;
+      }
+    }
+
+  }
+        
+  .inputForm{
+    margin-bottom: 20px; 
+    border-style: none;
+    border-bottom: 1px solid white;
+    background-color: black;
+  }
+
+  .inputMensaje{
+    margin-bottom: 25px; 
+    border-style: none;
+    background-color: black;
+  }
+
+  form{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 90px;
+    margin-left: 0px;
+    color: white;
+  }
+      
+}

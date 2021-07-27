@@ -20,7 +20,7 @@
       list-style-type: none; }
     .bloqueSuperior .bloqueNavegacion a {
       text-decoration: none;
-      font-size: 16pt;
+      font-size: 14pt;
       font-weight: 300;
       color: #404041 !important;
       padding-left: 50px;
@@ -194,27 +194,74 @@ h2 {
     background-color: #ffed00;
     border: 1pt solid #ffed00; }
 
-/* CONTACTO */
-body .formularioContacto {
-  display: flex;
-  margin-bottom: 50px;
-  margin-left: 10px; }
-
-body .inputForm {
-  margin-bottom: 20px;
-  border-style: none;
-  border-bottom: 1px solid; }
-
-body form {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  margin-left: 10px; }
-
-body .lunaContacto {
-  position: absolute;
-  right: 40px;
-  top: 350px;
-  opacity: 0.5; }
+/* CONTACTO, TODO CAMBIA A DARK MODE*/
+.bodyContacto {
+  background-image: url("/Users/vilo/Desktop/cineclubnocturna/recursos/img/fondoStar.png");
+  background-size: cover;
+  height: 900px; }
+  .bodyContacto .tituloEspecialBlanco {
+    font-family: 'outlines', sans-serif;
+    color: white;
+    font-size: 50pt;
+    margin: 0px;
+    width: 40%; }
+  .bodyContacto .bloqueNavegacionBlanco {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-evenly; }
+    .bodyContacto .bloqueNavegacionBlanco .navBarraBlanca {
+      display: flex;
+      width: 100%;
+      flex-direction: row; }
+    .bodyContacto .bloqueNavegacionBlanco ul {
+      list-style-type: none; }
+    .bodyContacto .bloqueNavegacionBlanco a {
+      text-decoration: none;
+      font-size: 14pt;
+      font-weight: 300;
+      color: white !important;
+      padding-left: 50px;
+      padding-right: 10px; }
+    .bodyContacto .bloqueNavegacionBlanco a:hover {
+      text-decoration: underline !important;
+      text-decoration-thickness: 10pt !important;
+      text-decoration-color: #ffed00 !important; }
+  .bodyContacto .formularioContacto {
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    justify-content: space-between; }
+    .bodyContacto .formularioContacto #formDos {
+      margin-left: 180px; }
+      .bodyContacto .formularioContacto #formDos .botonEnviar {
+        padding: 10px 15px 10px 15px;
+        font-family: 'Mulish', sans-serif;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        width: 120px;
+        margin-left: 300px; }
+      .bodyContacto .formularioContacto #formDos .botonEnviar:hover {
+        color: black;
+        background-color: #ffed00;
+        border: 1px solid #ffed00; }
+  .bodyContacto .inputForm {
+    margin-bottom: 20px;
+    border-style: none;
+    border-bottom: 1px solid white;
+    background-color: black; }
+  .bodyContacto .inputMensaje {
+    margin-bottom: 25px;
+    border-style: none;
+    background-color: black; }
+  .bodyContacto form {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 90px;
+    margin-left: 0px;
+    color: white; }
 
 /* FUNCIONES */
 .cardFunciones {
@@ -264,7 +311,9 @@ body .lunaContacto {
 
 body {
   font-family: 'Mulish', sans-serif;
-  margin: 100px !important; }
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  margin-top: 60px !important; }
 
 @font-face {
   font-family: 'outlines';
