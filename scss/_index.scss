@@ -4,14 +4,6 @@ h2 {
     font-size: 18pt;
   }
   
-  #directores{
-    letter-spacing: 5px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    text-decoration: none !important;
-    color: $colorMarroncito !important;
-  }
-  
   .primerBloque{
     display: flex;
     margin-top: 50px;
@@ -51,7 +43,6 @@ h2 {
 
   }
 
-
   .carousel-inner {
   
     position: relative;
@@ -79,4 +70,12 @@ h2 {
       margin-top: 15pt;
     }
 
+  }
+
+  #directores{
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: none !important;
+    color: $colorMarroncito !important;
   }
