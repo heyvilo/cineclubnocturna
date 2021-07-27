@@ -48,13 +48,6 @@ footer {
 h2 {
   font-size: 18pt; }
 
-#directores {
-  letter-spacing: 5px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  text-decoration: none !important;
-  color: #404041 !important; }
-
 .primerBloque {
   display: flex;
   margin-top: 50px; }
@@ -106,6 +99,13 @@ h2 {
   .novedades .card-text {
     font-size: 10pt;
     margin-top: 15pt; }
+
+#directores {
+  letter-spacing: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-decoration: none !important;
+  color: #404041 !important; }
 
 /* HISTORIA */
 .bloquePrincipal {
@@ -255,11 +255,14 @@ h2 {
   .bodyContacto .inputMensaje {
     margin-bottom: 25px;
     border-style: none;
-    background-color: black; }
+    background-color: black;
+    color: white; }
+  .bodyContacto .inputForm {
+    color: white; }
   .bodyContacto form {
     display: flex;
-    margin-bottom: 50px;
-    margin-top: 90px;
+    margin-bottom: 120px;
+    margin-top: 50px;
     margin-left: 0px;
     color: white; }
 

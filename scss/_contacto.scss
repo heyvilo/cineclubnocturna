@@ -87,12 +87,17 @@
     margin-bottom: 25px; 
     border-style: none;
     background-color: black;
+    color: white;
+  }
+
+  .inputForm{
+    color: white;
   }
 
   form{
     display: flex;
-    margin-bottom: 50px;
-    margin-top: 90px;
+    margin-bottom: 120px;
+    margin-top: 50px;
     margin-left: 0px;
     color: white;
   }
