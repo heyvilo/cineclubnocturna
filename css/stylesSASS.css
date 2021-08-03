@@ -40,23 +40,33 @@ footer {
     width: 100%;
     height: 20vh;
     padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     line-height: 1.45; }
+    footer .bloque .linksFooter {
+      color: #404041; }
+  footer .bloqueLogo {
+    text-align: right;
+    margin-top: 35px; }
 
 /* HOME */
 h2 {
-  font-size: 18pt; }
+  font-family: 'NetworkRegular', sans-serif;
+  font-style: normal;
+  color: red;
+  opacity: 0.7;
+  font-size: 50px;
+  letter-spacing: 5px; }
 
 .primerBloque {
   display: flex;
-  margin-top: 50px; }
-
-.textoIzquierda {
-  width: 70%;
-  font-weight: 300;
-  font-size: 14pt;
-  margin-left: 10px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .primerBloque .textoIzquierda {
+    width: 70%;
+    font-weight: 300;
+    font-size: 14pt;
+    margin-left: 10px; }
 
 .segundoBloque {
   display: flex;
@@ -73,6 +83,15 @@ h2 {
 
 .carouselTitulo {
   font-weight: 700; }
+
+#primerCarousel {
+  width: 33%; }
+
+#segundoCarousel {
+  width: 33%; }
+
+#tercerCarousel {
+  width: 33%; }
 
 .tresCarouseles {
   display: flex;
@@ -100,12 +119,13 @@ h2 {
     font-size: 10pt;
     margin-top: 15pt; }
 
-#directores {
-  letter-spacing: 5px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  text-decoration: none !important;
-  color: #404041 !important; }
+.listado {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .listado #directores {
+    letter-spacing: 5px;
+    text-decoration: none !important;
+    color: #404041 !important; }
 
 /* HISTORIA */
 .bloquePrincipal {
@@ -236,17 +256,14 @@ h2 {
     .bodyContacto .formularioContacto #formDos {
       margin-left: 180px; }
       .bodyContacto .formularioContacto #formDos .botonEnviar {
-        padding: 10px 15px 10px 15px;
-        font-family: 'Mulish', sans-serif;
-        color: white;
+        font-family: 'NetworkRegular', sans-serif;
+        color: #ffed00;
+        font-size: 30pt;
+        font-style: oblique;
         background-color: black;
-        border: 1px solid white;
-        width: 120px;
+        border: 1px solid black;
+        width: 150px;
         margin-left: 300px; }
-      .bodyContacto .formularioContacto #formDos .botonEnviar:hover {
-        color: black;
-        background-color: #ffed00;
-        border: 1px solid #ffed00; }
   .bodyContacto .inputForm {
     margin-bottom: 20px;
     border-style: none;
@@ -255,6 +272,7 @@ h2 {
   .bodyContacto .inputMensaje {
     margin-bottom: 25px;
     border-style: none;
+    border-bottom: 1px solid white;
     background-color: black;
     color: white; }
   .bodyContacto .inputForm {
@@ -267,32 +285,94 @@ h2 {
     color: white; }
 
 /* FUNCIONES */
-.cardFunciones {
-  background-color: #dfdbd3;
-  border-radius: 1pt; }
+.lineaMarcador {
+  font-family: 'NetworkRegular', sans-serif;
+  font-style: normal;
+  color: red;
+  opacity: 0.7;
+  font-size: 40px;
+  text-align: right;
+  margin-top: -75px; }
 
-.funciones {
+.finalMarcador {
+  font-family: 'NetworkRegular', sans-serif;
+  font-style: normal;
+  color: black;
+  opacity: 0.7;
+  font-size: 30px;
+  text-align: left; }
+
+.programacionMalba {
   display: flex;
-  justify-content: space-between; }
-  .funciones table {
-    margin: 25px 0 25px 0; }
-  .funciones .date {
-    font-family: 'ubuntu', sans-serif;
-    color: black;
-    font-size: 60px;
-    font-weight: 800;
-    opacity: 0.7;
-    margin: 15px 0 45px 0;
-    text-align: left; }
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .programacionMalba .primerPeli, .programacionMalba .segundaPeli, .programacionMalba .tercerPeli, .programacionMalba .cuartaPeli, .programacionMalba .quintaPeli {
+    width: 20%;
+    margin: 20px;
+    padding: 20px; }
+    .programacionMalba .primerPeli .date, .programacionMalba .segundaPeli .date, .programacionMalba .tercerPeli .date, .programacionMalba .cuartaPeli .date, .programacionMalba .quintaPeli .date {
+      font-family: 'NetworkRegular', sans-serif;
+      font-style: normal;
+      color: red;
+      opacity: 0.7;
+      font-size: 54px;
+      font-weight: 800;
+      margin: 15px 0 15px 0;
+      text-align: left; }
+    .programacionMalba .primerPeli p, .programacionMalba .segundaPeli p, .programacionMalba .tercerPeli p, .programacionMalba .cuartaPeli p, .programacionMalba .quintaPeli p {
+      font-size: 10pt;
+      font-style: italic; }
+  .programacionMalba .subSinopsis {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700; }
 
+.botonSinopsis {
+  padding: 10px 20px 10px 20px;
+  border: 1pt solid black;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  color: black; }
+  .botonSinopsis .botonSinopsis:hover {
+    background-color: #ffed00;
+    border: 1pt solid #ffed00; }
+
+/* PAGINA DE ERROR */
 .tituloInvisible {
   font-size: 0pt;
   opacity: 0px; }
 
+body {
+  font-family: 'Mulish', sans-serif;
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  margin-top: 30px !important; }
+
+@font-face {
+  font-family: 'outlines';
+  src: url("Outlines.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilmer Light';
+  src: url("Gilmer Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NetworkRegular';
+  src: url("NetworkRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /* PAGINA DE ERROR */
 .bodyError {
   font-family: 'Mulish', sans-serif;
-  margin-bottom: 0px !important; }
+  margin-bottom: 0px !important;
+  height: 100vh; }
   .bodyError .bloqueError {
     display: flex; }
     .bodyError .bloqueError .tituloError {
@@ -311,15 +391,3 @@ h2 {
       position: relative;
       margin-top: -100px;
       margin-left: 200px; }
-
-body {
-  font-family: 'Mulish', sans-serif;
-  margin-left: 100px !important;
-  margin-right: 100px !important;
-  margin-top: 60px !important; }
-
-@font-face {
-  font-family: 'outlines';
-  src: url("Outlines.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }

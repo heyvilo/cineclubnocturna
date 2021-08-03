@@ -9,10 +9,43 @@
 @import "contacto.scss";
 @import "funciones.scss";
 
+
+/* PAGINA DE ERROR */
+
+
 .tituloInvisible{
   font-size: 0pt;
   opacity: 0px;
 }
+
+body{
+  font-family: 'Mulish', sans-serif;
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  margin-top: 30px !important;
+}
+
+@font-face{
+  font-family: 'outlines';
+  src: url('Outlines.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+@font-face{
+  font-family: 'Gilmer Light';
+  src: url('Gilmer Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'NetworkRegular';
+  src: url('NetworkRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* PAGINA DE ERROR */
 
@@ -20,6 +53,7 @@
 .bodyError{
   font-family: 'Mulish', sans-serif;
   margin-bottom: 0px !important;
+  height: 100vh;
 
   .bloqueError{
     display: flex;
@@ -52,18 +86,3 @@
   }
 
 }
-
-body{
-  font-family: 'Mulish', sans-serif;
-  margin-left: 100px !important;
-  margin-right: 100px !important;
-  margin-top: 60px !important;
-}
-
-@font-face{
-  font-family: 'outlines';
-  src: url('Outlines.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-  

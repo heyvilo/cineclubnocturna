@@ -58,19 +58,14 @@
       margin-left: 180px;
 
       .botonEnviar {
-      padding: 10px 15px 10px 15px;
-      font-family: 'Mulish', sans-serif;
-      color: white;
+      font-family: 'NetworkRegular', sans-serif;  
+      color: $amarillito;
+      font-size: 30pt;
+      font-style: oblique;
       background-color: black;
-      border: 1px solid white;
-      width: 120px;
+      border: 1px solid black;
+      width: 150px;
       margin-left: 300px;
-      }
-
-      .botonEnviar:hover {
-        color: black;
-        background-color: $amarillito;
-        border: 1px solid $amarillito;
       }
     }
 
@@ -86,6 +81,7 @@
   .inputMensaje{
     margin-bottom: 25px; 
     border-style: none;
+    border-bottom: 1px solid white;
     background-color: black;
     color: white;
   }
