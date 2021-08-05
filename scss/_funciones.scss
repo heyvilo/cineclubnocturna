@@ -6,7 +6,7 @@
   font-style: normal;
   color: red;
   opacity: 0.7;
-  font-size: 40px;
+  font-size: 50px;
   text-align: right;
   margin-top: -75px;
 }
@@ -38,11 +38,17 @@
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 54px;
+      font-size: 40pt;
       font-weight: 800; 
       margin: 15px 0 15px 0;  
-      text-align: left;
-    }
+      }
+
+    .time {
+      @extend .date;
+      font-size: 17pt;
+      color: blue;
+      letter-spacing: 3px;
+      }
       
     p{
     font-size: 10pt;

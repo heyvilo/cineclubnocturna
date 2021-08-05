@@ -290,7 +290,7 @@ h2 {
   font-style: normal;
   color: red;
   opacity: 0.7;
-  font-size: 40px;
+  font-size: 50px;
   text-align: right;
   margin-top: -75px; }
 
@@ -311,15 +311,18 @@ h2 {
     width: 20%;
     margin: 20px;
     padding: 20px; }
-    .programacionMalba .primerPeli .date, .programacionMalba .segundaPeli .date, .programacionMalba .tercerPeli .date, .programacionMalba .cuartaPeli .date, .programacionMalba .quintaPeli .date {
+    .programacionMalba .primerPeli .date, .programacionMalba .segundaPeli .date, .programacionMalba .tercerPeli .date, .programacionMalba .cuartaPeli .date, .programacionMalba .quintaPeli .date, .programacionMalba .primerPeli .time, .programacionMalba .segundaPeli .time, .programacionMalba .tercerPeli .time, .programacionMalba .cuartaPeli .time, .programacionMalba .quintaPeli .time {
       font-family: 'NetworkRegular', sans-serif;
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 54px;
+      font-size: 40pt;
       font-weight: 800;
-      margin: 15px 0 15px 0;
-      text-align: left; }
+      margin: 15px 0 15px 0; }
+    .programacionMalba .primerPeli .time, .programacionMalba .segundaPeli .time, .programacionMalba .tercerPeli .time, .programacionMalba .cuartaPeli .time, .programacionMalba .quintaPeli .time {
+      font-size: 17pt;
+      color: blue;
+      letter-spacing: 3px; }
     .programacionMalba .primerPeli p, .programacionMalba .segundaPeli p, .programacionMalba .tercerPeli p, .programacionMalba .cuartaPeli p, .programacionMalba .quintaPeli p {
       font-size: 10pt;
       font-style: italic; }
@@ -338,6 +341,10 @@ h2 {
   .botonSinopsis .botonSinopsis:hover {
     background-color: #ffed00;
     border: 1pt solid #ffed00; }
+
+/* CURIOSIDADES */
+.card-text1 {
+  font-size: 9pt; }
 
 /* PAGINA DE ERROR */
 .tituloInvisible {
