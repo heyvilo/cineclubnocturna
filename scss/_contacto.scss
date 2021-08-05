@@ -4,7 +4,7 @@
 
   background-image: url("/Users/vilo/Desktop/cineclubnocturna/recursos/img/fondoStar.png");
   background-size: cover;
-  height: 900px;
+  height: 1400px;
 
   .tituloEspecialBlanco{
     font-family:'outlines', sans-serif;  
@@ -50,12 +50,18 @@
     
   .formularioContacto{
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-left: 10px;
     justify-content: space-between;
 
+
+    #lunaBlanca{
+      margin-left: 200px;
+      margin-top: -100px;
+      opacity: 0.2;
+    }  
+
     #formDos{
-      margin-left: 180px;
 
       .botonEnviar {
       font-family: 'NetworkRegular', sans-serif;  
@@ -65,10 +71,10 @@
       background-color: black;
       border: 1px solid black;
       width: 150px;
-      margin-left: 300px;
+      margin-left: 270px;
       }
-    }
 
+    }
   }
         
   .inputForm{
@@ -93,9 +99,10 @@
   form{
     display: flex;
     margin-bottom: 120px;
-    margin-top: 50px;
+    margin-top: 35px;
     margin-left: 0px;
     color: white;
   }
-      
+
+
 }
