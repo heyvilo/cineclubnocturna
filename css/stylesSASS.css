@@ -339,6 +339,10 @@ h2 {
     background-color: #ffed00;
     border: 1pt solid #ffed00; }
 
+/* CURIOSIDADES */
+.card-text1 {
+  font-size: 12pt; }
+
 /* PAGINA DE ERROR */
 .tituloInvisible {
   font-size: 0pt;
