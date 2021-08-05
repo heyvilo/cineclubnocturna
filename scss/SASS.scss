@@ -10,10 +10,6 @@
 @import "funciones.scss";
 @import "curiosidades.scss";
 
-
-/* PAGINA DE ERROR */
-
-
 .tituloInvisible{
   font-size: 0pt;
   opacity: 0px;
@@ -85,5 +81,18 @@ body{
     }
   
   }
+
+}
+
+/* PAGINA DE ERROR MOBILE */
+
+@media only screen and (max-width: 600px){
+
+}
+
+
+/* PAGINA DE ERROR TABLET*/
+
+@media only screen and (min-width: 1024px){
 
 }
