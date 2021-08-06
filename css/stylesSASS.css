@@ -2,7 +2,7 @@
 .bloqueSuperior {
   display: flex; }
   .bloqueSuperior .tituloEspecial {
-    font-family: 'outlines', sans-serif;
+    font-family: "outlines", sans-serif;
     font-size: 50pt;
     margin: 0px;
     width: 40%; }
@@ -29,6 +29,35 @@
       text-decoration: underline !important;
       text-decoration-thickness: 10pt !important;
       text-decoration-color: #ffed00 !important; }
+
+@media only screen and (max-width: 767px) {
+  .bloqueSuperior {
+    padding: 0 10px; }
+    .bloqueSuperior .contenedorTitulo {
+      display: flex;
+      align-items: center; }
+    .bloqueSuperior .tituloEspecial {
+      text-align: left;
+      font-size: 25pt;
+      margin: 0px;
+      width: auto; }
+    .bloqueSuperior .bloqueNavegacion {
+      border-left: 1px solid;
+      margin-right: 10px;
+      padding-left: 5px;
+      margin-top: 0;
+      justify-content: flex-start;
+      width: auto; }
+      .bloqueSuperior .bloqueNavegacion ul {
+        padding: 0; }
+      .bloqueSuperior .bloqueNavegacion .navBarra {
+        flex-direction: column; }
+        .bloqueSuperior .bloqueNavegacion .navBarra li {
+          margin-bottom: 5px; }
+        .bloqueSuperior .bloqueNavegacion .navBarra a {
+          font-size: 11pt;
+          padding-left: 5px;
+          padding-right: 5px; } }
 
 footer {
   display: flex;
@@ -127,6 +156,48 @@ h2 {
     text-decoration: none !important;
     color: #404041 !important; }
 
+@media only screen and (max-width: 767px) {
+  .primerBloque {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 0 10px; }
+    .primerBloque .textoIzquierda {
+      width: auto;
+      font-size: 12pt;
+      margin-left: 0; }
+    .primerBloque .contenedorVideo {
+      width: 100%; }
+      .primerBloque .contenedorVideo iframe {
+        width: 100%;
+        height: 200px; }
+  .subtitle {
+    text-align: center; }
+  .tresCarouseles {
+    flex-direction: column !important; }
+    .tresCarouseles #primerCarousel, .tresCarouseles #segundoCarousel, .tresCarouseles #tercerCarousel {
+      width: 100%; }
+    .tresCarouseles .carousel-inner {
+      padding: 0; }
+  .novedades {
+    flex-wrap: wrap; }
+    .novedades .card {
+      width: 100%;
+      margin-bottom: 1.5rem; }
+  .directoresHome {
+    padding: 0 16px; }
+    .directoresHome .listado {
+      text-align: center; }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px; }
+    .footer .bloque {
+      height: auto;
+      padding: 0;
+      margin: 10px 0; }
+    .footer .bloqueLogo {
+      text-align: center; } }
+
 /* HISTORIA */
 .bloquePrincipal {
   display: flex;
@@ -218,6 +289,7 @@ h2 {
 .bodyContacto {
   background-image: url("/Users/vilo/Desktop/cineclubnocturna/recursos/img/fondoStar.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 1400px; }
   .bodyContacto .tituloEspecialBlanco {
     font-family: 'outlines', sans-serif;
@@ -286,6 +358,43 @@ h2 {
     margin-left: 0px;
     color: white; }
 
+/* PAGINA DE CONTACTO MOBILE */
+@media only screen and (max-width: 767px) {
+  .bodyContacto {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px; }
+    .bodyContacto .contenedorTitulo {
+      display: flex;
+      align-items: center; }
+    .bodyContacto .tituloEspecialBlanco {
+      text-align: left;
+      font-size: 25pt;
+      margin: 0px;
+      width: auto; }
+    .bodyContacto .bloqueNavegacionBlanco {
+      border-left: 1px solid;
+      margin-right: 10px;
+      padding-left: 5px;
+      margin-top: 0;
+      justify-content: flex-start;
+      width: auto; }
+      .bodyContacto .bloqueNavegacionBlanco ul {
+        padding: 0; }
+      .bodyContacto .bloqueNavegacionBlanco .navBarra {
+        flex-direction: column; }
+        .bodyContacto .bloqueNavegacionBlanco .navBarra li {
+          margin-bottom: 5px; }
+        .bodyContacto .bloqueNavegacionBlanco .navBarra a {
+          font-size: 11pt;
+          padding-left: 5px;
+          padding-right: 5px; }
+    .bodyContacto form {
+      flex-direction: column; }
+      .bodyContacto form #lunaBlanca {
+        height: 0px;
+        opacity: 0; } }
+
 /* FUNCIONES */
 .lineaMarcador {
   font-family: 'NetworkRegular', sans-serif;
@@ -344,9 +453,26 @@ h2 {
     background-color: #ffed00;
     border: 1pt solid #ffed00; }
 
+@media only screen and (max-width: 767px) {
+  .programacionMalba {
+    flex-direction: column;
+    justify-content: center; }
+  .finalMarcador {
+    text-align: center;
+    font-size: 25px; } }
+
 /* CURIOSIDADES */
 .card-text1 {
-  font-size: 9pt; }
+  font-size: 12pt; }
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 2rem; }
+  .card-text1 {
+    font-size: 10pt; }
+  .analisisPelis {
+    display: flex;
+    flex-wrap: wrap; } }
 
 .tituloInvisible {
   font-size: 0pt;
@@ -376,13 +502,25 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+/* PAGINA DE ERROR MOBILE */
+@media only screen and (max-width: 600px) {
+  .bloqueError {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .bloqueError .tituloError {
+      font-size: 60pt; } }
+
 /* PAGINA DE ERROR */
 .bodyError {
   font-family: 'Mulish', sans-serif;
-  margin-bottom: 0px !important;
+  margin: 0 !important;
   height: 100vh; }
+  .bodyError .todoError {
+    height: 100vh; }
   .bodyError .bloqueError {
-    display: flex; }
+    display: flex;
+    height: 100%; }
     .bodyError .bloqueError .tituloError {
       font-family: 'outlines', sans-serif;
       font-size: 100pt;
@@ -399,6 +537,5 @@ body {
       position: relative;
       margin-top: -100px;
       margin-left: 200px; }
-
-/* PAGINA DE ERROR MOBILE */
-/* PAGINA DE ERROR TABLET*/
+      .bodyError .bloqueError .bloqueFotoError img {
+        height: 100%; }
