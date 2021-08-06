@@ -287,7 +287,7 @@ h2 {
 
 /* CONTACTO, TODO CAMBIA A DARK MODE*/
 .bodyContacto {
-  background-image: url("/Users/vilo/Desktop/cineclubnocturna/recursos/img/fondoStar.png");
+  background-image: url("../recursos/img/fondoStar.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 1400px; }
