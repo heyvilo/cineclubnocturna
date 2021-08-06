@@ -2,5 +2,20 @@
 /* CURIOSIDADES */
 
 .card-text1{
-  font-size: 9pt;
+  font-size: 12pt;
+}
+
+@media only screen and (max-width: 767px){
+
+  .card{
+    margin-bottom: 2rem;
+  }
+  .card-text1{
+    font-size: 10pt;
+  }
+  
+  .analisisPelis {
+  display: flex;
+  flex-wrap: wrap;
+  }
 }

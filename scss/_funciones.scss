@@ -94,3 +94,21 @@
     }
 
 }
+
+
+@media only screen and (max-width: 767px){
+
+  .programacionMalba {
+    flex-direction: column;
+    justify-content: center;
+  } 
+  
+    .finalMarcador {
+      text-align: center;
+      font-size: 25px;
+    }
+
+
+}
+
+
