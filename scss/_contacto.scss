@@ -14,7 +14,15 @@
     margin: 0px;
     width: 40%;
   }
-
+  #bloqueContacto {
+    color: #fff;
+    .navBarra{
+       li a{
+        color: #fff!important;
+      }
+    }
+  }
+/*
   .bloqueNavegacionBlanco{
     display: flex;
     flex-direction: row !important;
@@ -48,7 +56,7 @@
     }
 
   }
-    
+    */
   .formularioContacto{
     display: flex;
     margin-bottom: 50px;
@@ -126,7 +134,7 @@
     align-items: center;
   }
   .tituloEspecialBlanco {
-    text-align: left;
+    text-align: center;
     font-size: 25pt;
     margin: 0px;
     width: auto;
@@ -153,14 +161,38 @@
       }
     }
   }
+  
+  .formularioContacto{
+    margin: 0!important;
+    display: block!important;
+  }
 
   form{
     flex-direction: column;
+    #formUno{
+      padding: 0 2rem;
+
+      input,textarea{
+        background: transparent;
+        width: 100%;
+        margin-top: .5rem;
+      }
+      .botonEnviar{
+        font-weight: bold!important;
+        margin: 0!important;
+        background: transparent!important;
+        border: transparent!important;
+        margin-left: auto!important;
+        display: block!important;
+      }
+
+    }
     #lunaBlanca{
-      height: 0px;
-      opacity: 0;
+      display: none;
     } 
   }
+
+
 }
 
 

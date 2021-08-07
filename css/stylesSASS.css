@@ -204,11 +204,12 @@ h2 {
   margin: 20px; }
 
 .textoNosotros {
-  width: 40%;
+  width: 36%;
   font-size: 12pt;
   font-weight: lighter;
   line-height: 1.5;
   text-align: justify;
+  margin-left: -10px;
   margin-right: 70px; }
 
 .pFINAL {
@@ -217,14 +218,14 @@ h2 {
 
 .grillaFotos {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 200px 200px 350px 450px 450px;
+  grid-template-columns: 340px 340px;
+  grid-template-rows: 240px 240px 240px 240px 240px;
   grid-auto-rows: 1fr;
   gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "programa1 programa2" "programa3 programa4";
   width: 50%;
-  margin-top: 22px; }
+  margin-top: 5px; }
 
 .foto1 {
   grid-area: foto1; }
@@ -255,6 +256,19 @@ h2 {
 
 .programa4 {
   grid-area: programa4; }
+
+/* RESOLUCION MOBILE */
+@media only screen and (max-width: 767px) {
+  .bloquePrincipal {
+    margin-top: 3rem !important;
+    flex-direction: column !important; }
+    .bloquePrincipal .textoNosotros {
+      width: 100%;
+      margin: 0 !important; }
+    .bloquePrincipal .contenedorImagenes .foto {
+      margin-top: 1rem; }
+    .bloquePrincipal .contenedorImagenes img {
+      width: 100%; } }
 
 /* ANALISIS */
 .analisisPelis {
@@ -290,36 +304,52 @@ h2 {
   background-image: url("../recursos/img/fondoStar.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1400px; }
+  height: 1400px;
+  /*
+  .bloqueNavegacionBlanco{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .navBarraBlanca{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    ul{
+      list-style-type: none;
+    }
+
+    a{
+      text-decoration: none;
+      font-size: 14pt;
+      font-weight: 300;
+      color: white !important;
+      padding-left: 50px;
+      padding-right: 10px;
+    }
+
+    a:hover{
+      text-decoration: underline !important;
+      text-decoration-thickness: 10pt !important;
+      text-decoration-color: $amarillito !important;
+    }
+
+  }
+    */ }
   .bodyContacto .tituloEspecialBlanco {
     font-family: 'outlines', sans-serif;
     color: white;
     font-size: 50pt;
     margin: 0px;
     width: 40%; }
-  .bodyContacto .bloqueNavegacionBlanco {
-    display: flex;
-    flex-direction: row !important;
-    margin-top: 10px;
-    width: 100%;
-    justify-content: space-evenly; }
-    .bodyContacto .bloqueNavegacionBlanco .navBarraBlanca {
-      display: flex;
-      width: 100%;
-      flex-direction: row; }
-    .bodyContacto .bloqueNavegacionBlanco ul {
-      list-style-type: none; }
-    .bodyContacto .bloqueNavegacionBlanco a {
-      text-decoration: none;
-      font-size: 14pt;
-      font-weight: 300;
-      color: white !important;
-      padding-left: 50px;
-      padding-right: 10px; }
-    .bodyContacto .bloqueNavegacionBlanco a:hover {
-      text-decoration: underline !important;
-      text-decoration-thickness: 10pt !important;
-      text-decoration-color: #ffed00 !important; }
+  .bodyContacto #bloqueContacto {
+    color: #fff; }
+    .bodyContacto #bloqueContacto .navBarra li a {
+      color: #fff !important; }
   .bodyContacto .formularioContacto {
     display: flex;
     margin-bottom: 50px;
@@ -368,7 +398,7 @@ h2 {
       display: flex;
       align-items: center; }
     .bodyContacto .tituloEspecialBlanco {
-      text-align: left;
+      text-align: center;
       font-size: 25pt;
       margin: 0px;
       width: auto; }
@@ -389,11 +419,26 @@ h2 {
           font-size: 11pt;
           padding-left: 5px;
           padding-right: 5px; }
+    .bodyContacto .formularioContacto {
+      margin: 0 !important;
+      display: block !important; }
     .bodyContacto form {
       flex-direction: column; }
+      .bodyContacto form #formUno {
+        padding: 0 2rem; }
+        .bodyContacto form #formUno input, .bodyContacto form #formUno textarea {
+          background: transparent;
+          width: 100%;
+          margin-top: .5rem; }
+        .bodyContacto form #formUno .botonEnviar {
+          font-weight: bold !important;
+          margin: 0 !important;
+          background: transparent !important;
+          border: transparent !important;
+          margin-left: auto !important;
+          display: block !important; }
       .bodyContacto form #lunaBlanca {
-        height: 0px;
-        opacity: 0; } }
+        display: none; } }
 
 /* FUNCIONES */
 .lineaMarcador {
@@ -457,6 +502,21 @@ h2 {
   .programacionMalba {
     flex-direction: column;
     justify-content: center; }
+    .programacionMalba .primerPeli, .programacionMalba .segundaPeli, .programacionMalba .tercerPeli, .programacionMalba .cuartaPeli, .programacionMalba .quintaPeli, .programacionMalba .segundaPeli, .programacionMalba .tercerPeli, .programacionMalba .cuartaPeli {
+      text-align: center !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important; }
+      .programacionMalba .primerPeli img, .programacionMalba .segundaPeli img, .programacionMalba .tercerPeli img, .programacionMalba .cuartaPeli img, .programacionMalba .quintaPeli img, .programacionMalba .segundaPeli img, .programacionMalba .tercerPeli img, .programacionMalba .cuartaPeli img {
+        width: 50% !important;
+        display: block !important;
+        margin: auto !important; }
+      .programacionMalba .primerPeli .botonSinopsis, .programacionMalba .segundaPeli .botonSinopsis, .programacionMalba .tercerPeli .botonSinopsis, .programacionMalba .cuartaPeli .botonSinopsis, .programacionMalba .quintaPeli .botonSinopsis, .programacionMalba .segundaPeli .botonSinopsis, .programacionMalba .tercerPeli .botonSinopsis, .programacionMalba .cuartaPeli .botonSinopsis {
+        display: block;
+        margin: auto; }
+      .programacionMalba .primerPeli .card, .programacionMalba .segundaPeli .card, .programacionMalba .tercerPeli .card, .programacionMalba .cuartaPeli .card, .programacionMalba .quintaPeli .card, .programacionMalba .segundaPeli .card, .programacionMalba .tercerPeli .card, .programacionMalba .cuartaPeli .card {
+        width: 80% !important;
+        margin: auto !important; }
   .finalMarcador {
     text-align: center;
     font-size: 25px; } }
@@ -539,3 +599,21 @@ body {
       margin-left: 200px; }
       .bodyError .bloqueError .bloqueFotoError img {
         height: 100%; }
+
+/* PAGINA DE ERROR MOBILE */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 !important; }
+  /* PAGINA ERROR */
+  .bloqueError .tituloError {
+    margin: 2rem 0 !important;
+    text-align: center;
+    font-size: 60pt !important; }
+  .bloqueError .textoError {
+    text-align: center;
+    margin: 0 !important; }
+  .bloqueError .bloqueFotoError {
+    position: none !important;
+    margin: 0 !important; }
+    .bloqueError .bloqueFotoError img {
+      width: 100%; } }

@@ -101,6 +101,27 @@
   .programacionMalba {
     flex-direction: column;
     justify-content: center;
+
+    .primerPeli,.segundaPeli,.tercerPeli,.cuartaPeli{
+      text-align: center!important;
+      width: 100%!important;
+      margin: 0!important;
+      padding: 0!important;
+      img{
+        width: 50%!important;
+        display: block!important;
+        margin: auto!important;
+      }
+      .botonSinopsis{
+        display: block;
+        margin: auto;
+      }
+      .card{
+        width: 80%!important;
+        margin: auto!important;
+      }
+    }
+
   } 
   
     .finalMarcador {

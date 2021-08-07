@@ -2,57 +2,80 @@
   
   
 .bloquePrincipal{
-    display: flex;
-    margin: 20px;
-  }
-  
-  .textoNosotros{
-  width: 40%;
-  font-size: 12pt;
-  font-weight: lighter;
-  line-height: 1.5;
-  text-align:justify;
-  margin-right: 70px;
-  }
+  display: flex;
+  margin: 20px;
+}
 
-  .pFINAL{
-    font-weight: bold;
-    font-style: italic;
+.textoNosotros{
+width: 36%;
+font-size: 12pt;
+font-weight: lighter;
+line-height: 1.5;
+text-align:justify;
+margin-left: -10px;
+margin-right: 70px;
+}
+
+.pFINAL{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.grillaFotos {
+  display: grid;
+  grid-template-columns: 340px 340px;
+  grid-template-rows: 240px 240px 240px 240px 240px;
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "foto1 foto2"
+    "foto3 foto4"
+    "foto5 foto6"
+    "programa1 programa2"
+    "programa3 programa4";
+  width: 50%;
+  margin-top: 5px;
+}
+
+.foto1 { grid-area: foto1; }
+
+.foto2 { grid-area: foto2; }
+
+.foto3 { grid-area: foto3; }
+
+.foto4 { grid-area: foto4; }
+
+.foto5 { grid-area: foto5; }
+
+.foto6 { grid-area: foto6; }
+
+.programa1 { grid-area: programa1; }
+
+.programa2 { grid-area: programa2; }
+
+.programa3 { grid-area: programa3; }
+
+.programa4 { grid-area: programa4; }
+
+
+/* RESOLUCION MOBILE */
+
+@media only screen and (max-width: 767px) {
+  .bloquePrincipal{
+    margin-top: 3rem!important;
+    flex-direction: column!important;
+    .textoNosotros{
+      width: 100%;
+      margin: 0!important;
+    }
+    .contenedorImagenes{
+      .foto{
+        margin-top: 1rem;
+      }
+      img{
+        width: 100%;
+      }
+    }
   }
-  
-  .grillaFotos {
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 200px 200px 350px 450px 450px;
-    grid-auto-rows: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "foto1 foto2"
-      "foto3 foto4"
-      "foto5 foto6"
-      "programa1 programa2"
-      "programa3 programa4";
-    width: 50%;
-    margin-top: 22px;
-  }
-  
-  .foto1 { grid-area: foto1; }
-  
-  .foto2 { grid-area: foto2; }
-  
-  .foto3 { grid-area: foto3; }
-  
-  .foto4 { grid-area: foto4; }
-  
-  .foto5 { grid-area: foto5; }
-  
-  .foto6 { grid-area: foto6; }
-  
-  .programa1 { grid-area: programa1; }
-  
-  .programa2 { grid-area: programa2; }
-  
-  .programa3 { grid-area: programa3; }
-  
-  .programa4 { grid-area: programa4; }
+}
