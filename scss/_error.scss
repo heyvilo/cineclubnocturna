@@ -1,27 +1,16 @@
 
-/* PAGINA DE ERROR MOBILE */
+/* ERROR MOBILE & TABLET */
   
+@media only screen and (max-width: 1024px){
 
-@media only screen and (max-width: 767px){
- 
-  .bloqueError{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    .tituloError{
-      font-size: 60pt;
-    }
-  }
-}
-
-
-@media only screen and (max-width: 767px){
-    body{
-      margin:0!important;  
-    }
+  .bodyError{
+    margin:0!important;  
   
     .bloqueError{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
       .tituloError{
         margin: 2rem 0!important;
         text-align: center;
@@ -40,52 +29,53 @@
       }
     }
   }
+}
+
+
+/* ERROR DESKTOP */
+
+
+.bodyError{
+  font-family: 'Mulish', sans-serif;
+  margin: 0!important;
+  height: 100vh;
   
-  /* PAGINA DE ERROR DESKTOP */
-  
-  
-  .bodyError{
-    font-family: 'Mulish', sans-serif;
-    margin: 0!important;
+  .todoError{
     height: 100vh;
+  }
+
+  .bloqueError{
+    display: flex;
+    height: 100%;
+  
+    .tituloError{
+      font-family:'outlines', sans-serif;  
+      font-size: 100pt;
+      margin-top: 100px;
+    }
     
-    .todoError{
-      height: 100vh;
+    .textoError{
+      font-size: 14pt;
+      font-weight: 300;
+      margin-left: 20px;
+      margin-top: -100px;
+
+      a {
+        font-weight: bold;
+        color: $colorMarroncito;
+      }
+  
     }
   
-    .bloqueError{
-      display: flex;
-      height: 100%;
-    
-      .tituloError{
-        font-family:'outlines', sans-serif;  
-        font-size: 100pt;
-        margin-top: 100px;
+    .bloqueFotoError{
+      position: relative;
+      margin-top: -100px;
+      margin-left: 200px;
+      img{
+        height: 100%;
       }
-      
-      .textoError{
-        font-size: 14pt;
-        font-weight: 300;
-        margin-left: 20px;
-        margin-top: -100px;
-  
-        a {
-          font-weight: bold;
-          color: $colorMarroncito;
-        }
-    
-      }
-    
-      .bloqueFotoError{
-        position: relative;
-        margin-top: -100px;
-        margin-left: 200px;
-        img{
-          height: 100%;
-        }
-      }
-    
     }
   
   }
-  
+
+}
