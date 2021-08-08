@@ -1,41 +1,26 @@
-/* HOME */
+/* HOME DESKTOP */
 
-h2 {
-  font-family: 'NetworkRegular', sans-serif;  
-  font-style: normal;
-  color: red;
-  opacity: 0.7;
-  font-size: 50px;
-  letter-spacing: 5px;
-}
+@media only screen and (min-width: 1025px){
   
-.primerBloque{
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  .primerBloque{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-  .textoIzquierda{
-    width: 70%;
-    font-weight: 300;
-    font-size: 14pt;
-    margin-left: 10px;
+    .textoIzquierda{
+      width: 70%;
+      font-weight: 300;
+      font-size: 14pt;
+      margin-left: 10px;
+    }
+
   }
-
-}
 
   .segundoBloque{
     display: flex;
     justify-content: space-between;
     margin: 25px;
-  }
-  
-  .suscribirse{
-    background: var(--blanco);
-    width: 100px;
-    height: 25px;
-    border: 1px solid var(--negro);
-    box-sizing: border-box;
-    border-radius: 2px;
   }
   
   .carouselTitulo{
@@ -100,71 +85,206 @@ h2 {
       color: $colorMarroncito !important;
     }
   }
+}
 
 
-  @media only screen and (max-width: 767px){
-      .primerBloque{
-        margin-top: 20px;
-        flex-wrap: wrap;
-        padding: 0 10px;
-        .textoIzquierda{
-          width: auto;
-          font-size: 12pt;
-          margin-left: 0;
-        }
-        .contenedorVideo{
-          width: 100%;
-          iframe{
-            width: 100%;
-            height: 200px;
-          }
-        }
-      }
+/* HOME TABLET */
 
-      // CAROUSELS
-      .subtitle{
-        text-align: center;
-      }
-      .tresCarouseles{
-        flex-direction: column!important;
-        #primerCarousel,#segundoCarousel,#tercerCarousel{
-          width: 100%;
-        }
-        .carousel-inner{
-          padding: 0;
-        }
-      }
 
-      // NOVEDADES
-      .novedades{
-        flex-wrap: wrap;
-        .card{
-          width: 100%;
-          margin-bottom: 1.5rem;
-        }
-      }
+@media only screen and (min-width: 601px) and (max-width: 1024px){  
 
-      // DIRECTORES
-
-      .directoresHome{
-        padding: 0 16px;
-        .listado{
-          text-align: center;
-        }
-      }
-
-      // FOOTER
-      .footer{
-        flex-direction: column;
-        text-align: center;
-        padding-top: 15px;
-        .bloque{
-          height: auto;
-          padding: 0;
-          margin: 10px 0;
-        }
-        .bloqueLogo{
-          text-align: center;
-        }    
-      }
+  .lineaMarcador{
+    display: none;
   }
+
+  .bloqueSuperior{
+    display: flex;
+
+    .tituloEspecial {
+      font-size: 46pt;
+      margin: 0px;
+    }
+
+    .bloqueNavegacion {
+      margin-top: 10px;
+    }
+
+    .navBarra{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+  }
+
+  .primerBloque {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    .contenedorVideo{
+
+      width: 100%;
+
+      iframe{
+        width: 100%;
+      }
+
+    }
+
+    .boxIzq{
+      display: flex;
+      justify-content: center;
+
+      .textoIzquierda {
+        margin-left: 0;
+        width: 80%;
+      }
+    }
+
+  }  
+
+  .segundoBloque{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+  }
+  
+  .carouselTitulo{
+    font-weight: 700;
+  }
+
+  #primerCarousel{
+    width: 33%;
+  }
+
+  #segundoCarousel{
+    width: 33%;
+  }
+
+  #tercerCarousel{
+    width: 33%;
+  }
+
+  .tresCarouseles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+  .carousel-inner {
+  
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
+    height: 480px;
+
+    .carousel-item{
+      transition: transform .15s;
+    }
+  }
+
+  .novedades{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .card-text{
+      font-size: 10pt;
+      margin-top: 15pt;
+    }
+
+  }
+
+  .card{
+    width: 33%;
+  }
+
+  .listado {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  
+    #directores{
+      letter-spacing: 5px;
+      text-decoration: none !important;
+      color: $colorMarroncito !important;
+    }
+  }
+}
+
+
+
+
+/* HOME MOBILE */
+
+@media only screen and (max-width: 600px){
+
+  .primerBloque{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+      
+    .textoIzquierda{
+      width: auto;
+      font-size: 12pt;
+      margin-left: 0;
+    }
+      
+    .contenedorVideo{
+      width: 100%;
+      iframe{
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+
+  // Carouseles
+
+  .subtitle{
+    text-align: center;
+  }
+  
+  .tresCarouseles{
+    flex-direction: column!important;
+    #primerCarousel,#segundoCarousel,#tercerCarousel{
+    width: 100%;
+    }
+      
+    .carousel-inner{
+      padding: 0;
+    }
+  }
+
+  // Novedades
+
+  .novedades{
+    flex-wrap: wrap;
+
+    .card{
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  // Directores
+
+  .directoresHome{
+    padding: 0 16px;
+      
+    .listado{
+        text-align: center;
+    }
+  }
+}
+
+
