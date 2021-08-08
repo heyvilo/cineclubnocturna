@@ -43,11 +43,11 @@
     margin-top: 30px !important;
 
     .subtitle {
-      font-family: 'NetworkRegular', sans-serif !important; 
+      font-family: 'NetworkRegular', sans-serif; 
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 50px;
+      font-size: 40px;
       letter-spacing: 5px;
       text-align: left !important;
     }  
@@ -57,7 +57,7 @@
 
 /* BODY TABLET */
 
-@media only screen and (min-width: 601px) and (min-width: 1024px){  
+@media only screen and (min-width: 601px) and (max-width: 1024px){  
   body{
     margin-left: 50px !important;
     margin-right: 50px !important;
@@ -68,7 +68,7 @@
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 40px;
+      font-size: 30px;
       letter-spacing: 5px;
       text-align: center;
     }
@@ -89,7 +89,7 @@
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 40px;
+      font-size: 20px;
       letter-spacing: 5px;
       text-align: center;
     }

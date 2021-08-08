@@ -42,7 +42,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .bloqueSuperior {
     padding: 0 10px;
     border-bottom: 1pt solid lightgray;
@@ -84,14 +84,17 @@
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1365px){  
+@media only screen and (min-width: 769px) and (max-width: 1024px){  
 
     .bloqueSuperior{
       display: flex;
+      padding: 0 10px;
+      border-bottom: 1pt solid lightgray;
 
       .tituloEspecial {
         font-size: 46pt;
         margin: 0px;
+        text-align: left;
       }
 
       .bloqueNavegacion {

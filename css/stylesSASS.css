@@ -30,7 +30,7 @@
       text-decoration-thickness: 10pt !important;
       text-decoration-color: #ffed00 !important; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .bloqueSuperior {
     padding: 0 10px;
     border-bottom: 1pt solid lightgray; }
@@ -61,12 +61,15 @@
           padding-right: 5px;
           color: #404041; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1365px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .bloqueSuperior {
-    display: flex; }
+    display: flex;
+    padding: 0 10px;
+    border-bottom: 1pt solid lightgray; }
     .bloqueSuperior .tituloEspecial {
       font-size: 46pt;
-      margin: 0px; }
+      margin: 0px;
+      text-align: left; }
     .bloqueSuperior .bloqueNavegacion {
       margin-top: 10px; }
     .bloqueSuperior .navBarra {
@@ -123,13 +126,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 25px; }
-  .suscribirse {
-    background: var(--blanco);
-    width: 100px;
-    height: 25px;
-    border: 1px solid var(--negro);
-    box-sizing: border-box;
-    border-radius: 2px; }
   .carouselTitulo {
     font-weight: 700; }
   #primerCarousel {
@@ -171,6 +167,8 @@ footer {
 
 /* HOME TABLET */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .lineaMarcador {
+    display: none; }
   .bloqueSuperior {
     display: flex; }
     .bloqueSuperior .tituloEspecial {
@@ -188,19 +186,61 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap; }
-    .primerBloque .textoIzquierda {
-      margin-left: 0; }
+    .primerBloque .contenedorVideo {
+      width: 100%; }
+      .primerBloque .contenedorVideo iframe {
+        width: 100%; }
+    .primerBloque .boxIzq {
+      display: flex;
+      justify-content: center; }
+      .primerBloque .boxIzq .textoIzquierda {
+        margin-left: 0;
+        width: 80%; }
+  .segundoBloque {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px; }
+  .carouselTitulo {
+    font-weight: 700; }
+  #primerCarousel {
+    width: 33%; }
+  #segundoCarousel {
+    width: 33%; }
+  #tercerCarousel {
+    width: 33%; }
+  .tresCarouseles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
   .carousel-inner {
-    margin-top: 35px;
-    margin-bottom: 0px;
-    padding: 20px;
-    height: 400px; }
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
+    height: 480px; }
+    .carousel-inner .carousel-item {
+      transition: transform .15s; }
+  .novedades {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .novedades .card-text {
+      font-size: 10pt;
+      margin-top: 15pt; }
   .card {
     width: 33%; }
   .listado {
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align: center; } }
+    text-align: center; }
+    .listado #directores {
+      letter-spacing: 5px;
+      text-decoration: none !important;
+      color: #404041 !important; } }
 
 /* HOME MOBILE */
 @media only screen and (max-width: 600px) {
@@ -645,16 +685,16 @@ footer {
     margin-right: 100px !important;
     margin-top: 30px !important; }
     body .subtitle {
-      font-family: 'NetworkRegular', sans-serif !important;
+      font-family: 'NetworkRegular', sans-serif;
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 50px;
+      font-size: 40px;
       letter-spacing: 5px;
       text-align: left !important; } }
 
 /* BODY TABLET */
-@media only screen and (min-width: 601px) and (min-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   body {
     margin-left: 50px !important;
     margin-right: 50px !important;
@@ -664,7 +704,7 @@ footer {
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 40px;
+      font-size: 30px;
       letter-spacing: 5px;
       text-align: center; } }
 
@@ -680,6 +720,6 @@ footer {
       font-style: normal;
       color: red;
       opacity: 0.7;
-      font-size: 40px;
+      font-size: 20px;
       letter-spacing: 5px;
       text-align: center; } }
