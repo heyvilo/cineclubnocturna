@@ -122,6 +122,12 @@ footer {
       font-weight: 300;
       font-size: 14pt;
       margin-left: 10px; }
+  .botonFechas {
+    text-decoration: none;
+    color: black;
+    font-size: 21pt !important;
+    background-color: white;
+    border: white; }
   .segundoBloque {
     display: flex;
     justify-content: space-between;
