@@ -579,9 +579,21 @@ footer {
   display: block;
   width: 200px;
   color: black; }
-  .botonSinopsis .botonSinopsis:hover {
-    background-color: #ffed00;
-    border: 1pt solid #ffed00; }
+
+.botonEntradas {
+  padding: 10px 20px 10px 20px;
+  border: 0pt solid black;
+  text-decoration: none;
+  display: block;
+  background: yellow;
+  color: black;
+  width: 200px; }
+
+.card-body-funcion {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  margin-bottom: 20px;
+  width: 200px; }
 
 @media only screen and (max-width: 767px) {
   .programacionMalba {
