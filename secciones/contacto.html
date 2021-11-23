@@ -61,15 +61,15 @@
         <div class="formularioContacto">
             <form>
                 <div id="formUno">
-                    <label for="nombre">Nombre completo</label>
+                    <label for="nombre" id="nombre" >Nombre completo</label>
                         <br>
                     <input class="inputForm" type="text" name="nombre" size="50">
                         <br>
-                    <label for="email">Email</label>
+                    <label for="email"id="email" >Email</label>
                         <br>
                     <input class="inputForm" type="email" name="email" size="50">  
                         <br>
-                    <label for="tel">Teléfono</label>
+                    <label for="tel" id="tel">Teléfono</label>
                         <br>
                     <input class="inputForm" type="tel" name="tel" size="50">
 
@@ -78,7 +78,7 @@
                             <br>
                         <textarea class="inputMensaje" name="consulta" rows="3" cols="50"></textarea>
                             <br>
-                        <input class="botonEnviar" type="submit" value="Enviar">
+                        <input class="botonEnviar" onclick="contactar()" type="submit" value="Enviar">
                     </div>
                 </div>
 
@@ -88,6 +88,8 @@
 
             </form>
         </div>
+
+        <script src= "../contacto.js"></script>
 
     </body>
 </html>
