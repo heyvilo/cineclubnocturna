@@ -32,9 +32,6 @@ const evento = (cantidadHoras) =>{
     }
 
 
-
-
-
 //Array de ciclos hasta el momento
 
 
