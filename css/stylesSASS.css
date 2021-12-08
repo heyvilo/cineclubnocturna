@@ -525,6 +525,23 @@ footer {
       .bodyContacto form #lunaBlanca {
         display: none; } }
 
+/* VALIDACIONES DE CONTACTO */
+.success {
+  border: 2px solid #2ba039; }
+
+.error {
+  border: 2px solid #b93327; }
+
+.error__msje {
+  background-color: #b93327;
+  color: white; }
+
+.not-allowed {
+  opacity: 0.4; }
+
+.allowed {
+  opacity: none; }
+
 /* FUNCIONES */
 .lineaMarcador {
   font-family: 'NetworkRegular', sans-serif;
