@@ -32,6 +32,20 @@ const evento = (cantidadHoras) =>{
     }
 
 
+//Evento que crea un efecto sobre "Ver fechas disponibles"
+
+document.getElementById("fechasEfecto").onmouseover = function() {mouseOver()};
+document.getElementById("fechasEfecto").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("fechasEfecto").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("fechasEfecto").style.color = "black";
+}
+
+
 //Array de ciclos hasta el momento
 
 
