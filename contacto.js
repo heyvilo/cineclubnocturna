@@ -26,7 +26,7 @@ contactanosForm.addEventListener("click", function(e){
 //Evento que confirma si el usuario desea enviar el mensaje, puede confirmar presionando OK o presionando ENTER
 
 
-botoncito.addEventListener("click", function(e){
+botoncito.addEventListener("click", function(){
 
   let enviar;
   let confirmar = confirm("¿Desea enviar su mensaje y datos de contacto?");
