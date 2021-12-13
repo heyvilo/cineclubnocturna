@@ -1,0 +1,119 @@
+
+/* ERROR MOBILE & TABLET */
+  
+@media only screen and (max-width: 1024px){
+
+  .bodyIngresar{
+    margin:0!important;  
+  
+    .bloqueIngresar{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .tituloIngresar{
+        margin: 2rem 0!important;
+        text-align: center;
+        font-size: 40pt!important;
+      }
+      .textoIngresar{
+        text-align: center;
+        margin: 0!important;
+      }
+      .bloqueFotoIngresar{
+        position: none!important;
+        margin: 0!important;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+/* ERROR DESKTOP */
+
+
+.bodyIngresar{
+  font-family: 'Mulish', sans-serif;
+  margin: 0!important;
+  height: 100vh;
+  
+  .todoIngresar{
+    height: 100vh;
+  }
+
+  .bloqueIngresar{
+    display: flex;
+    height: 100%;
+  
+    .tituloIngresar{
+      font-family:'outlines', sans-serif;  
+      font-size: 80pt;
+      margin-top: 100px;
+    }
+    
+    .textoIngresar{
+      font-size: 14pt;
+      font-weight: 300;
+      margin-left: 20px;
+      margin-top: -100px;
+
+      a {
+        font-weight: bold;
+        color: $colorMarroncito;
+      }
+  
+    }
+  
+    .bloqueFotoIngresar{
+      position: relative;
+      margin-top: -100px;
+      margin-left: 200px;
+      img{
+        height: 100%;
+      }
+    }
+  
+  }
+  
+  .camposLogin{
+    margin-bottom: 12px; 
+    padding: 13px 15px;
+    border-style: none;
+  }
+  
+  .inputLogin{
+      padding: 10px 20px 10px 20px;
+      border: 1pt solid black;
+      text-decoration: none;
+      display: block;
+      width: 200px;
+      font-family: 'Mulish', sans-serif;
+  }
+
+
+  .botonLogin{
+    padding: 10px 20px 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+    border-color: black;
+    width: 200px !important;
+    font-family: 'Mulish', sans-serif;
+}
+  
+  
+  .linkRegister,.textoRegister{
+    color: black;
+    text-align: left;
+  }
+  
+  .linkRegister{
+    text-decoration: underline;
+  }
+
+}
+

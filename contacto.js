@@ -36,7 +36,10 @@ botoncito.addEventListener("click", function(){
     alert ("Cancelado");
   }
   document.getElementById("botoncito").innerHTML = enviar;
+  
 })
+
+// capturar el keydown en alguna tecla
 
 /* FORMA QUE UTILICE ANTERIORMENTE
 
