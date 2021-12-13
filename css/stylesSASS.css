@@ -11,11 +11,11 @@
     flex-direction: row !important;
     margin-top: 10px;
     width: 100%;
-    justify-content: space-evenly; }
+    justify-content: space-between; }
     .bloqueSuperior .bloqueNavegacion .navBarra {
       display: flex;
-      width: 100%;
-      flex-direction: row; }
+      flex-direction: row;
+      justify-content: space-around !important; }
     .bloqueSuperior .bloqueNavegacion ul {
       list-style-type: none; }
     .bloqueSuperior .bloqueNavegacion a {
@@ -697,6 +697,81 @@ footer {
       margin-left: 200px; }
       .bodyError .bloqueError .bloqueFotoError img {
         height: 100%; }
+
+/* ERROR MOBILE & TABLET */
+@media only screen and (max-width: 1024px) {
+  .bodyIngresar {
+    margin: 0 !important; }
+    .bodyIngresar .bloqueIngresar {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .bodyIngresar .bloqueIngresar .tituloIngresar {
+        margin: 2rem 0 !important;
+        text-align: center;
+        font-size: 40pt !important; }
+      .bodyIngresar .bloqueIngresar .textoIngresar {
+        text-align: center;
+        margin: 0 !important; }
+      .bodyIngresar .bloqueIngresar .bloqueFotoIngresar {
+        position: none !important;
+        margin: 0 !important; }
+        .bodyIngresar .bloqueIngresar .bloqueFotoIngresar img {
+          width: 100%; } }
+
+/* ERROR DESKTOP */
+.bodyIngresar {
+  font-family: 'Mulish', sans-serif;
+  margin: 0 !important;
+  height: 100vh; }
+  .bodyIngresar .todoIngresar {
+    height: 100vh; }
+  .bodyIngresar .bloqueIngresar {
+    display: flex;
+    height: 100%; }
+    .bodyIngresar .bloqueIngresar .tituloIngresar {
+      font-family: 'outlines', sans-serif;
+      font-size: 80pt;
+      margin-top: 100px; }
+    .bodyIngresar .bloqueIngresar .textoIngresar {
+      font-size: 14pt;
+      font-weight: 300;
+      margin-left: 20px;
+      margin-top: -100px; }
+      .bodyIngresar .bloqueIngresar .textoIngresar a {
+        font-weight: bold;
+        color: #404041; }
+    .bodyIngresar .bloqueIngresar .bloqueFotoIngresar {
+      position: relative;
+      margin-top: -100px;
+      margin-left: 200px; }
+      .bodyIngresar .bloqueIngresar .bloqueFotoIngresar img {
+        height: 100%; }
+  .bodyIngresar .camposLogin {
+    margin-bottom: 12px;
+    padding: 13px 15px;
+    border-style: none; }
+  .bodyIngresar .inputLogin {
+    padding: 10px 20px 10px 20px;
+    border: 1pt solid black;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    font-family: 'Mulish', sans-serif; }
+  .bodyIngresar .botonLogin {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+    border-color: black;
+    width: 200px !important;
+    font-family: 'Mulish', sans-serif; }
+  .bodyIngresar .linkRegister, .bodyIngresar .textoRegister {
+    color: black;
+    text-align: left; }
+  .bodyIngresar .linkRegister {
+    text-decoration: underline; }
 
 @font-face {
   font-family: 'outlines';

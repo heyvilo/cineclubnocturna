@@ -13,12 +13,12 @@
     flex-direction: row !important;
     margin-top: 10px;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     .navBarra {
       display: flex;
-      width: 100%;
       flex-direction: row;
+      justify-content: space-around !important;
     }
 
     ul {
