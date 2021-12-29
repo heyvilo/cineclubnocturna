@@ -1,10 +1,20 @@
 //Aplicando Jquery en la página de login
 
-$(document).ready(function(){
-    $(".botonLogin").click(function(){
-      $(".botonLogin").animate({left: '250px'});
-    });
-  });
 
-let efectoLogin = $(".botonLogin");
-console.log(efectoLogin);
+let inputs = $ ("inputsLogin");
+$(".bodyIngresar").css("background-color"), ("grey");
+console.log(inputs);
+
+
+
+//Capturando desde el DOM pero con función que utiliza Jquery
+
+/*
+let boton = document.getElementById("botonLogin");
+boton.addEventListener("click" , function(){
+
+    let valor = $("#email").val();
+    console.log(valor);
+} )
+
+*/
