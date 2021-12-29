@@ -2,7 +2,7 @@
 
 
 let inputs = $ ("inputsLogin");
-$(".bodyIngresar").css("background-color"), ("grey");
+$(".bodyIngresar").css("background-color", "#fafafa")
 console.log(inputs);
 
 
@@ -16,5 +16,4 @@ boton.addEventListener("click" , function(){
     let valor = $("#email").val();
     console.log(valor);
 } )
-
 */
