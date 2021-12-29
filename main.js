@@ -88,3 +88,50 @@ $(".listado:even").css("color" , "red");
 $(".listado").append(`<p>WILLIAM FRIEDKIN •</p>`);
 
 $(".listado").append(`<p>ED WOOD JR.</p>`);
+
+
+//Efecto del botón
+
+document.getElementById("button").onmouseover = function() {mouseOver()};
+document.getElementById("button").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("button").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("button").style.color = "black";
+}
+
+
+//Pidiendo datos API con Ajax
+
+let url = "http://hp-api.herokuapp.com/api/characters"
+
+$("#button").click(function(){
+
+    $.get( url, function(datos){
+
+    for( let personajesHP of datos){
+    $("body").append(`<div> 
+                        <h4> ${personajesHP.name}</h4>
+                        </div>`);
+    }     
+    console.log(datos)
+    })
+})
+
+
+
+
+//ESTA NO ME FUNCIONA, NO ENTIENDO PORQUE ME DICE NO AUTORIZADO
+
+
+let urlDos = "https://superheroapi.com/api/1222151908272497/character-id"
+
+$("#button2").click(function(){
+
+    $.get (urlDos, function(datosDos){
+    console.log(datosDos)
+    })
+})
