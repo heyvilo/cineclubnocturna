@@ -77,6 +77,14 @@ function mouseOut() {
 
 console.log(ciclosNocturna);
 
+//Aplicando Jquery en la sección de directores, cambia de color el separador entre cada director
+
+$(".listado:even").css("color" , "red");
+
+//Aplicando Jquery en la sección de directores, agregando directores... por alguna razón me lo pone desordenado
+//Tampoco sé como darle el mismo css 
 
 
+$(".listado").append(`<p>WILLIAM FRIEDKIN •</p>`);
 
+$(".listado").append(`<p>ED WOOD JR.</p>`);
